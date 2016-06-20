@@ -1,0 +1,173 @@
+<Deck>
+  
+  <card>
+    <id>0</id>
+    <name>SageSupport</name>
+    <image>Нильфгаард/nilf_1.png</image>
+    <damage>0</damage>
+    <rows>
+      <sage/>
+    </rows>
+  </card>
+  
+  <card>
+    <id>1</id>
+    <name>BowSupport</name>
+    <image>Нильфгаард/nilf_2.png</image>
+    <damage>1</damage>
+    <rows>
+      <ranged/>
+    </rows>
+  </card>  
+  
+  <card>
+    <id>2</id>
+    <name>Vreemde</name>
+    <image>Нильфгаард/nilf_4.png</image>
+    <damage>2</damage>
+    <rows>
+      <melee/>
+    </rows>
+  </card>  
+
+  <card>
+    <id>3</id>
+    <name>Nausikaa</name>
+    <image>Нильфгаард/nilf_5.png</image>
+    <damage>2</damage>
+    <rows>
+      <melee/>
+    </rows>
+  </card>  
+  
+  <card>
+    <id>4</id>
+    <name>Svirs</name>
+    <image>Нильфгаард/nilf_6.png</image>
+    <damage>2</damage>
+    <rows>
+      <melee/>
+    </rows>
+  </card>  
+  
+  <card>
+    <id>5</id>
+    <name>BowSupport</name>
+    <image>Нильфгаард/nilf_2.png</image>
+    <damage>1</damage>
+    <rows>
+      <ranged/>
+    </rows>
+  </card>  
+  
+  <card>
+    <id>6</id>
+    <name>Albryh</name>
+    <image>Нильфгаард/nilf_7.png</image>
+    <damage>2</damage>
+    <rows>
+      <ranged/>
+    </rows>
+  </card>  
+  
+  <card>
+    <id>7</id>
+    <name>Morteisen</name>
+    <image>Нильфгаард/nilf_8.png</image>
+    <damage>3</damage>
+    <rows>
+      <melee/>
+    </rows>
+  </card>  
+  
+  <card>
+    <id>8</id>
+    <name>Impera</name>
+    <image>Нильфгаард/nilf_9.png</image>
+    <damage>3</damage>
+    <rows>
+      <melee/>
+    </rows>
+  </card>  
+  
+  <card>
+    <id>9</id>
+    <name>Putkammer</name>
+    <image>Нильфгаард/nilf_10.png</image>
+    <damage>3</damage>
+    <rows>
+      <melee/>
+    </rows>
+  </card>  
+  
+  <card>
+    <id>10</id>
+    <name>Petraria</name>
+    <image>Нильфгаард/nilf_11.png</image>
+    <damage>3</damage>
+    <rows>
+      <sage/>
+    </rows>
+  </card>  
+  
+  <card>
+    <id>11</id>
+    <name>Reinfarn</name>
+    <image>Нильфгаард/nilf_12.png</image>
+    <damage>4</damage>
+    <rows>
+      <melee/>
+    </rows>
+  </card>  
+  
+  <card>
+    <id>12</id>
+    <name>Vattie</name>
+    <image>Нильфгаард/nilf_13.png</image>
+    <damage>4</damage>
+    <rows>
+      <melee/>
+    </rows>
+  </card>  
+  
+  <card>
+    <id>13</id>
+    <name>Vangemar</name>
+    <image>Нильфгаард/nilf_14.png</image>
+    <damage>4</damage>
+    <rows>
+      <melee/>
+    </rows>
+  </card>  
+  
+  <card>
+    <id>14</id>
+    <name>Cintia</name>
+    <image>Нильфгаард/nilf_15.png</image>
+    <damage>4</damage>
+    <rows>
+      <ranged/>
+    </rows>
+  </card>  
+  
+<!--  <card>
+    <id>15</id>
+    <name>BowSupport</name>
+    <image>Нильфгаард/nilf_2.png</image>
+    <damage>1</damage>
+    <rows>
+      <ranged/>
+    </rows>
+  </card>  
+  
+  <card>
+    <id>16</id>
+    <name>BowSupport</name>
+    <image>Нильфгаард/nilf_2.png</image>
+    <damage>1</damage>
+    <rows>
+      <ranged/>
+    </rows>
+  </card> --> 
+  
+</Deck>

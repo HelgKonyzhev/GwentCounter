@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>../Decks/Nilfgaard.xml</file>
+        <file>../Decks/North.xml</file>
+    </qresource>
+</RCC>

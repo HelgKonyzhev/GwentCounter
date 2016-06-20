@@ -1,0 +1,174 @@
+<Deck>
+  
+  <card>
+    <id>0</id>
+    <name>FuckingInfantry</name>
+    <image>Королевства севера/sev_1.png</image>
+    <damage>1</damage>
+    <rows>
+      <melee/>
+    </rows>
+  </card>
+  
+  <card>
+    <id>1</id>
+    <name>RedanianInfantry</name>
+    <image>Королевства севера/sev_2.png</image>
+    <damage>1</damage>
+    <rows>
+      <melee/>
+    </rows>
+  </card>  
+  
+  <card>
+    <id>2</id>
+    <name>SageMaster</name>
+    <image>Королевства севера/sev_4.png</image>
+    <damage>1</damage>
+    <rows>
+      <sage/>
+    </rows>
+  </card>  
+
+  <card>
+    <id>3</id>
+    <name>Taler</name>
+    <image>Королевства севера/sev_7.png</image>
+    <damage>1</damage>
+    <rows>
+      <sage/>
+    </rows>
+  </card>  
+  
+  <card>
+    <id>4</id>
+    <name>Jarpen</name>
+    <image>Королевства севера/sev_8.png</image>
+    <damage>2</damage>
+    <rows>
+      <melee/>
+    </rows>
+  </card>  
+  
+  <card>
+    <id>5</id>
+    <name>Sheldon</name>
+    <image>Королевства севера/sev_9.png</image>
+    <damage>4</damage>
+    <rows>
+      <ranged/>
+    </rows>
+  </card>  
+  
+  <card>
+    <id>6</id>
+    <name>BlueStripe</name>
+    <image>Королевства севера/sev_10.png</image>
+    <damage>4</damage>
+    <rows>
+      <melee/>
+    </rows>
+  </card>  
+  
+  <card>
+    <id>7</id>
+    <name>Deikstra</name>
+    <image>Королевства севера/sev_11.png</image>
+    <damage>4</damage>
+    <rows>
+      <melee/>
+    </rows>
+  </card>  
+  
+  <card>
+    <id>8</id>
+    <name>Sabrina</name>
+    <image>Королевства севера/sev_12.png</image>
+    <damage>4</damage>
+    <rows>
+      <ranged/>
+    </rows>
+  </card>  
+  
+  <card>
+    <id>9</id>
+    <name>Bianka</name>
+    <image>Королевства севера/sev_13.png</image>
+    <damage>5</damage>
+    <rows>
+      <melee/>
+    </rows>
+  </card>  
+  
+  <card>
+    <id>10</id>
+    <name>Siegfrid</name>
+    <image>Королевства севера/sev_14.png</image>
+    <damage>5</damage>
+    <rows>
+      <melee/>
+    </rows>
+  </card>  
+  
+  <card>
+    <id>11</id>
+    <name>Stennis</name>
+    <image>Королевства севера/sev_15.png</image>
+    <damage>5</damage>
+    <rows>
+      <melee/>
+    </rows>
+  </card>  
+  
+  <card>
+    <id>12</id>
+    <name>Keira</name>
+    <image>Королевства севера/sev_16.png</image>
+    <damage>5</damage>
+    <rows>
+      <ranged/>
+    </rows>
+  </card>  
+  
+  <card>
+    <id>13</id>
+    <name>Sheala</name>
+    <image>Королевства севера/sev_17.png</image>
+    <damage>5</damage>
+    <rows>
+      <ranged/>
+    </rows>
+  </card>  
+  
+  <card>
+    <id>14</id>
+    <name>Rubaila</name>
+    <image>Королевства севера/sev_18.png</image>
+    <damage>5</damage>
+    <rows>
+      <ranged/>
+    </rows>
+    <bro/>
+  </card>  
+  
+<!--  <card>
+    <id>15</id>
+    <name>BowSupport</name>
+    <image>Королевства севера/sev_2.png</image>
+    <damage>1</damage>
+    <rows>
+      <ranged/>
+    </rows>
+  </card>  
+  
+  <card>
+    <id>16</id>
+    <name>BowSupport</name>
+    <image>Королевства севера/sev_2.png</image>
+    <damage>1</damage>
+    <rows>
+      <ranged/>
+    </rows>
+  </card> --> 
+  
+</Deck>

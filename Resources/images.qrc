@@ -1,0 +1,37 @@
+<RCC>
+    <qresource prefix="/">
+        <file>../Interface/Images/540x960/Королевства севера/sev_1.png</file>
+        <file>../Interface/Images/540x960/Королевства севера/sev_2.png</file>
+        <file>../Interface/Images/540x960/Королевства севера/sev_3.png</file>
+        <file>../Interface/Images/540x960/Королевства севера/sev_4.png</file>
+        <file>../Interface/Images/540x960/Королевства севера/sev_5.png</file>
+        <file>../Interface/Images/540x960/Королевства севера/sev_6.png</file>
+        <file>../Interface/Images/540x960/Королевства севера/sev_7.png</file>
+        <file>../Interface/Images/540x960/Королевства севера/sev_8.png</file>
+        <file>../Interface/Images/540x960/Королевства севера/sev_9.png</file>
+        <file>../Interface/Images/540x960/Королевства севера/sev_10.png</file>
+        <file>../Interface/Images/540x960/Королевства севера/sev_11.png</file>
+        <file>../Interface/Images/540x960/Королевства севера/sev_12.png</file>
+        <file>../Interface/Images/540x960/Королевства севера/sev_13.png</file>
+        <file>../Interface/Images/540x960/Королевства севера/sev_14.png</file>
+        <file>../Interface/Images/540x960/Королевства севера/sev_15.png</file>
+        <file>../Interface/Images/540x960/Королевства севера/sev_16.png</file>
+        <file>../Interface/Images/540x960/Королевства севера/sev_17.png</file>
+        <file>../Interface/Images/540x960/Королевства севера/sev_18.png</file>
+        <file>../Interface/Images/540x960/Нильфгаард/nilf_1.png</file>
+        <file>../Interface/Images/540x960/Нильфгаард/nilf_2.png</file>
+        <file>../Interface/Images/540x960/Нильфгаард/nilf_3.png</file>
+        <file>../Interface/Images/540x960/Нильфгаард/nilf_4.png</file>
+        <file>../Interface/Images/540x960/Нильфгаард/nilf_5.png</file>
+        <file>../Interface/Images/540x960/Нильфгаард/nilf_6.png</file>
+        <file>../Interface/Images/540x960/Нильфгаард/nilf_7.png</file>
+        <file>../Interface/Images/540x960/Нильфгаард/nilf_8.png</file>
+        <file>../Interface/Images/540x960/Нильфгаард/nilf_9.png</file>
+        <file>../Interface/Images/540x960/Нильфгаард/nilf_10.png</file>
+        <file>../Interface/Images/540x960/Нильфгаард/nilf_11.png</file>
+        <file>../Interface/Images/540x960/Нильфгаард/nilf_12.png</file>
+        <file>../Interface/Images/540x960/Нильфгаард/nilf_13.png</file>
+        <file>../Interface/Images/540x960/Нильфгаард/nilf_14.png</file>
+        <file>../Interface/Images/540x960/Нильфгаард/nilf_15.png</file>
+    </qresource>
+</RCC>
