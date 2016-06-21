@@ -1,13 +1,14 @@
 TEMPLATE = app
 
-QT += qml quick
+QT += qml quick declarative
 CONFIG += c++11
 
 SOURCES += main.cpp \
     Engine/player.cpp \
     Engine/deck.cpp \
     Engine/card.cpp \
-    Engine/engine.cpp
+    Engine/engine.cpp \
+    Interface/mainwindow.cpp
 QMAKE_CXXFLAGS += -fPIC -fpic
 
 RESOURCES += Resources/qml.qrc \
@@ -26,5 +27,6 @@ HEADERS += \
     Engine/player.h \
     Engine/deck.h \
     Engine/card.h \
-    Engine/engine.h
+    Engine/engine.h \
+    Interface/mainwindow.h
 

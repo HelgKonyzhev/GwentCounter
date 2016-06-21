@@ -1,3 +1,8 @@
 <RCC>
-    <qresource prefix="/"/>
+    <qresource prefix="/">
+        <file>../Interface/Qml/MainWindow.qml</file>
+        <file>../Interface/Qml/MainMenu.qml</file>
+        <file>../Interface/Qml/PlayerSelection.qml</file>
+        <file>../Interface/Qml/Button.qml</file>
+    </qresource>
 </RCC>

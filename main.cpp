@@ -1,12 +1,14 @@
-#include <QGuiApplication>
-#include <QQmlApplicationEngine>
 #include <QDebug>
+#include <QApplication>
 
-#include "Engine/deck.h"
+#include "Interface/mainwindow.h"
 
 int main(int argc, char *argv[])
 {
-    QGuiApplication app(argc, argv);
+    QApplication app(argc, argv);
+
+    MainWindow *window = new MainWindow(540, 960);
+    window->show();
 
 //    qRegisterMetaType<CardProperty>("CardProperty");
 //    qRegisterMetaType<CardRow>("CardRow");
@@ -20,13 +22,13 @@ int main(int argc, char *argv[])
 //    QQmlApplicationEngine selectCardMenu(&field);
 //    selectCardMenu.load(QUrl(QStringLiteral("qrc:/Qml/SelectCardMenu.qml")));
 
-    Deck deck("North");
+//    Deck deck("North");
 
 //    qDebug() << CardProperty::All;
 
 //    qDebug() << (16383 & 8);
-//    int ret = app.exec();
-//    return ret;
-    return 0;
+    int ret = app.exec();
+    delete window;
+    return ret;
 }
 
