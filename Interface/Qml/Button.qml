@@ -1,11 +1,17 @@
 import QtQuick 1.1
 
-Item {
+MouseArea {
     id: button
     property string imageSource: ""
     property string labelText: ""
     property string labelTextColor: ""
+    property string backgroundColor: ""
     property int labelFontSize: 50
+
+    Rectangle {
+        anchors.fill: parent
+        color: backgroundColor
+    }
 
     Image {
         anchors.fill: parent
@@ -22,23 +28,6 @@ Item {
         anchors.centerIn: parent
         verticalAlignment: Text.AlignVCenter
         horizontalAlignment: Text.AlignHCenter
-    }
-
-    Rectangle {
-        color: "green"
-        opacity: 0.5
-        anchors.fill: parent
-    }
-
-    signal clicked
-
-    MouseArea {
-        id: mouseArea
-        anchors.fill: parent
-    }
-
-    Component.onCompleted: {
-        mouseArea.clicked.connect(clicked)
     }
 }
 

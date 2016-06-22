@@ -1,5 +1,8 @@
 <Deck>
   
+  <alias>Нильфгаард</alias>
+  <logo>Nilfgaard/cover.png</logo>
+
   <card>
     <id>0</id>
     <name>SageSupport</name>

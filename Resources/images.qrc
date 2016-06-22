@@ -34,5 +34,7 @@
         <file>../Interface/Images/540x960/Nilfgaard/nilf_14.png</file>
         <file>../Interface/Images/540x960/Nilfgaard/nilf_15.png</file>
         <file>../Interface/Images/540x960/Field.jpg</file>
+        <file>../Interface/Images/540x960/Nilfgaard/cover.png</file>
+        <file>../Interface/Images/540x960/North/cover.png</file>
     </qresource>
 </RCC>

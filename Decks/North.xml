@@ -1,5 +1,8 @@
 <Deck>
   
+  <alias>Королевства&#60;br&#62;севера</alias>
+  <logo>North/cover.png</logo>
+  
   <card>
     <id>0</id>
     <name>FuckingInfantry</name>

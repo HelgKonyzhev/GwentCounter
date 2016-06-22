@@ -1,5 +1,6 @@
 #include "mainwindow.h"
 #include <QDeclarativeContext>
+#include <QDebug>
 
 MainWindow::MainWindow(const int &width, const int &height)
     :QDeclarativeView()
@@ -15,3 +16,43 @@ MainWindow::MainWindow(const int &width, const int &height)
     setSource(QUrl("qrc:/Interface/Qml/MainWindow.qml"));
 }
 
+static Deck *selectDeck(Deck *currentDeck, const DecksSet &decks, const bool &next) {
+    Deck *ret = *(decks.begin());
+    if(currentDeck != NULL) {
+        auto it = decks.find(currentDeck);
+        if(next) {
+            if(++it == decks.end())
+                ret = *(decks.begin());
+            else
+                ret = *(it);
+        } else {
+            if(it == decks.begin())
+                ret = *(--decks.end());
+            else
+                ret = *(--it);
+        }
+    }
+    return ret;
+}
+
+void MainWindow::selectPlayer1Deck(const bool &next)
+{
+    m_player1Deck = selectDeck(m_player1Deck, m_decks, next);
+    if(m_player1Deck)
+        emit player1SetDeckSignal(m_player1Deck->getAlias(), m_player1Deck->getLogo());
+}
+
+void MainWindow::selectPlayer2Deck(const bool &next)
+{
+    m_player2Deck = selectDeck(m_player2Deck, m_decks, next);
+    if(m_player2Deck)
+        emit player2SetDeckSignal(m_player2Deck->getAlias(), m_player2Deck->getLogo());
+}
+
+void MainWindow::gameStartedSlot(const DecksSet &availableDecks)
+{
+    m_decks = availableDecks;
+    selectPlayer1Deck(true);
+    selectPlayer2Deck(true);
+    selectPlayer2Deck(true);
+}

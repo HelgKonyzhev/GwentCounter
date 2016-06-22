@@ -20,4 +20,17 @@ Item {
         id: mainMenu
         visible: true
     }
+
+    function showMainMenu() {
+        mainMenu.visible = true
+    }
+
+    function hideMainMenu() {
+        mainMenu.visible = false
+    }
+
+    Component.onCompleted: {
+        windowContext.showMainMenuSignal.connect(showMainMenu)
+        windowContext.hideMainMenuSignal.connect(hideMainMenu)
+    }
 }

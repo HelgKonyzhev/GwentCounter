@@ -2,33 +2,25 @@
 #include <QApplication>
 
 #include "Interface/mainwindow.h"
+#include "Engine/engine.h"
 
 int main(int argc, char *argv[])
 {
     QApplication app(argc, argv);
 
-    MainWindow *window = new MainWindow(540, 960);
+    MainWindow *window = new MainWindow(540, 960);        
     window->show();
 
-//    qRegisterMetaType<CardProperty>("CardProperty");
-//    qRegisterMetaType<CardRow>("CardRow");
-//    qRegisterMetaType<CardParam>("CardParam");
-//    qRegisterMetaType<PropertiesList>("PropertiesList");
-//    qRegisterMetaType<RowsList>("RowsList");
+    Engine *engine = new Engine();
 
-//    QQmlApplicationEngine field;
-//    field.load(QUrl(QStringLiteral("qrc:/Qml/Field.qml")));
+    QObject::connect(engine, SIGNAL(gameStartedSignal(const DecksSet&)),
+                     window, SLOT(gameStartedSlot(const DecksSet&)));
 
-//    QQmlApplicationEngine selectCardMenu(&field);
-//    selectCardMenu.load(QUrl(QStringLiteral("qrc:/Qml/SelectCardMenu.qml")));
+    engine->startGame();
 
-//    Deck deck("North");
-
-//    qDebug() << CardProperty::All;
-
-//    qDebug() << (16383 & 8);
     int ret = app.exec();
     delete window;
+    delete engine;
     return ret;
 }
 
