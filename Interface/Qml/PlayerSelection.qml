@@ -7,17 +7,8 @@ Item {
 
     property string labelText: ""
 
-    Text {
-        width: parent.width
-        text: labelText
-        font.pixelSize: 50
-        font.bold: true
-        color: "white"
-        horizontalAlignment: Text.AlignHCenter
-        anchors.top: parent.top
-    }
-
     Item {
+        id: deckSelection
         width: parent.width
         anchors.bottom: parent.bottom
         height: windowHeight / 10
@@ -69,6 +60,18 @@ Item {
                 }
             }
         }
+    }
+
+    Text {
+        y: 0
+        height: deckSelection.y
+        width: parent.width
+        text: labelText
+        font.pixelSize: 50
+        font.bold: true
+        color: "white"
+        horizontalAlignment: Text.AlignHCenter
+        verticalAlignment: Text.AlignVCenter
     }
 
     function deckSet(al, logo) {

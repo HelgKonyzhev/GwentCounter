@@ -32,8 +32,9 @@ namespace CardRow {
 const constexpr int Melee           = 1 << 0;
 const constexpr int Ranged          = 1 << 1;
 const constexpr int Sage            = 1 << 2;
+const constexpr int Weather         = 1 << 3;
 
-const constexpr int All             = Melee | Ranged | Sage;
+const constexpr int All             = Melee | Ranged | Sage | Weather;
 }
 
 namespace CardParam {

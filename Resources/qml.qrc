@@ -4,5 +4,8 @@
         <file>../Interface/Qml/MainMenu.qml</file>
         <file>../Interface/Qml/PlayerSelection.qml</file>
         <file>../Interface/Qml/Button.qml</file>
+        <file>../Interface/Qml/Field.qml</file>
+        <file>../Interface/Qml/PlayerField.qml</file>
+        <file>../Interface/Qml/CardsRow.qml</file>
     </qresource>
 </RCC>

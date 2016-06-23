@@ -16,21 +16,26 @@ Item {
         anchors.fill: parent
     }
 
+    Field {
+        id: field
+        visible: false
+    }
+
     MainMenu {
         id: mainMenu
         visible: true
     }
 
-    function showMainMenu() {
-        mainMenu.visible = true
+    function showMainMenu(show) {
+        mainMenu.visible = show
     }
 
-    function hideMainMenu() {
-        mainMenu.visible = false
+    function showField(show) {
+        field.visible = show
     }
 
     Component.onCompleted: {
         windowContext.showMainMenuSignal.connect(showMainMenu)
-        windowContext.hideMainMenuSignal.connect(hideMainMenu)
+        windowContext.showFieldSignal.connect(showField)
     }
 }

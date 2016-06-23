@@ -16,7 +16,7 @@ Rectangle {
 
         PlayerSelection {
             id: player2Selection
-            labelText: "Player2:<br>Завод<br>гвоздей"
+            labelText: "Player2:<br>Завод гвоздей"
         }
 
         Button {
@@ -29,12 +29,8 @@ Rectangle {
         }
     }
 
-    function gameStarted() {
-        console.log("LET THE BATTLE BEGINS!!!")
-    }
-
     Component.onCompleted: {
-        startButton.clicked.connect(gameStarted)
+        startButton.clicked.connect(windowContext.decksChosen)
         windowContext.player1SetDeckSignal.connect(player1Selection.deckSet)
         windowContext.player2SetDeckSignal.connect(player2Selection.deckSet)
         player1Selection.next.connect(windowContext.player1SelectNextDeckSlot)

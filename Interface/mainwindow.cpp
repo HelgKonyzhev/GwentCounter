@@ -1,6 +1,5 @@
 #include "mainwindow.h"
 #include <QDeclarativeContext>
-#include <QDebug>
 
 MainWindow::MainWindow(const int &width, const int &height)
     :QDeclarativeView()
@@ -55,4 +54,37 @@ void MainWindow::gameStartedSlot(const DecksSet &availableDecks)
     selectPlayer1Deck(true);
     selectPlayer2Deck(true);
     selectPlayer2Deck(true);
+}
+
+void MainWindow::player1TurnSlot(Deck *deck)
+{
+    m_turningDeck = deck;
+    emit player1TurnSignal();
+}
+
+void MainWindow::player2TurnSlot(Deck *deck)
+{
+    m_turningDeck = deck;
+    emit player2TurnSignal();
+}
+
+void MainWindow::roundStartedSlot()
+{
+    emit showMainMenuSignal(false);
+    emit showFieldSignal(true);
+}
+
+void MainWindow::player1SelectedRowSlot(int rowId)
+{
+    qDebug() << __func__ << rowId;
+}
+
+void MainWindow::player2SelectedRowSlot(int rowId)
+{
+    qDebug() << __func__ << rowId;
+}
+
+void MainWindow::selectedWeatherSlot()
+{
+    qDebug() << __func__;
 }

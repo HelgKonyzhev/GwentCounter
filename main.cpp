@@ -11,10 +11,7 @@ int main(int argc, char *argv[])
     MainWindow *window = new MainWindow(540, 960);        
     window->show();
 
-    Engine *engine = new Engine();
-
-    QObject::connect(engine, SIGNAL(gameStartedSignal(const DecksSet&)),
-                     window, SLOT(gameStartedSlot(const DecksSet&)));
+    Engine *engine = new Engine(window);
 
     engine->startGame();
 

@@ -1,11 +1,17 @@
 #include "player.h"
 
-Player::Player()
+Player::Player(QObject *parent)
+    :QObject(parent)
 {
-
 }
 
-void Player::setDeck(const QString &deckName)
+void Player::loadDeck(Deck *deck)
+{
+    m_deck = deck;
+    m_deck->load();
+}
+
+void Player::putCardSlot(Card *card)
 {
 
 }
