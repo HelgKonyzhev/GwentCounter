@@ -74,17 +74,7 @@ void MainWindow::roundStartedSlot()
     emit showFieldSignal(true);
 }
 
-void MainWindow::player1SelectedRowSlot(int rowId)
+void MainWindow::selectedRow(int rowId)
 {
     qDebug() << __func__ << rowId;
-}
-
-void MainWindow::player2SelectedRowSlot(int rowId)
-{
-    qDebug() << __func__ << rowId;
-}
-
-void MainWindow::selectedWeatherSlot()
-{
-    qDebug() << __func__;
 }

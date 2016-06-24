@@ -16,26 +16,19 @@ Rectangle {
     PlayerField {
         id: player1Field
         anchors.top: parent.top
-        signal selectedRowSignal(int rowId)
         Item {
             id: player1Rows
             anchors.fill: parent
             Column {
                 anchors.fill: parent
                 CardsRow {
-                    onClicked: {
-                        player1Field.selectedRowSignal(windowContext.getSageRowId())
-                    }
+                    rowId: windowContext.getSageRowId()
                 }
                 CardsRow {
-                    onClicked: {
-                        player1Field.selectedRowSignal(windowContext.getRangedRowId())
-                    }
+                    rowId: windowContext.getRangedRowId()
                 }
                 CardsRow {
-                    onClicked: {
-                        player1Field.selectedRowSignal(windowContext.getMeleeRowId())
-                    }
+                    rowId: windowContext.getMeleeRowId()
                 }
             }
         }
@@ -47,26 +40,19 @@ Rectangle {
     PlayerField {
         id: player2Field
         anchors.bottom: parent.bottom
-        signal selectedRowSignal(int rowId)
         Item {
             id: player2Rows
             anchors.fill: parent
             Column {
                 anchors.fill: parent
                 CardsRow {
-                    onClicked: {
-                        player2Field.selectedRowSignal(windowContext.getMeleeRowId())
-                    }
+                    rowId: windowContext.getMeleeRowId()
                 }
                 CardsRow {
-                    onClicked: {
-                        player2Field.selectedRowSignal(windowContext.getRangedRowId())
-                    }
+                    rowId: windowContext.getRangedRowId()
                 }
                 CardsRow {
-                    onClicked: {
-                        player2Field.selectedRowSignal(windowContext.getSageRowId())
-                    }
+                    rowId: windowContext.getSageRowId()
                 }
             }
         }
@@ -80,6 +66,7 @@ Rectangle {
         width: windowWidth
         anchors.top: player1Field.bottom
         anchors.bottom: player2Field.top
+        rowId: windowContext.getWeatherRowId()
     }
 
     function lockPlayerFiled(player, lock) {
@@ -100,9 +87,6 @@ Rectangle {
     Component.onCompleted: {
         windowContext.player1TurnSignal.connect(player1Turn)
         windowContext.player2TurnSignal.connect(player2Turn)
-        player1Field.selectedRowSignal.connect(windowContext.player1SelectedRowSlot)
-        player2Field.selectedRowSignal.connect(windowContext.player2SelectedRowSlot)
-        weatherFiled.clicked.connect(windowContext.selectedWeatherSlot)
     }
 }
 

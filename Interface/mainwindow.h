@@ -22,6 +22,8 @@ class MainWindow : public QDeclarativeView
 public:
     MainWindow(const int &width, const int &height);
 
+    Q_INVOKABLE void selectedRow(int rowId);
+
     Q_INVOKABLE inline int getMeleeRowId() {
         return CardRow::Melee;
     }
@@ -53,9 +55,6 @@ public slots:
     void player1TurnSlot(Deck *deck);
     void player2TurnSlot(Deck *deck);
     void roundStartedSlot();
-    Q_INVOKABLE void player1SelectedRowSlot(int rowId);
-    Q_INVOKABLE void player2SelectedRowSlot(int rowId);
-    Q_INVOKABLE void selectedWeatherSlot();
 
     Q_INVOKABLE inline void player1SelectNextDeckSlot() {
         selectPlayer1Deck(true);

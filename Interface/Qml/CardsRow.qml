@@ -5,12 +5,18 @@ MouseArea {
     width: parent.width
     height: parent.height / 3
 
+    property int rowId: 0
+
     id: mouseArea
+
     onPressed: {
         hightligt.visible = true
     }
     onReleased: {
         hightligt.visible = false
+    }
+    onClicked: {
+        windowContext.selectedRow(rowId)
     }
 
     Rectangle {
